@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <title>Encriptador y Desencriptador</title>
 </head>
 <body>
-    
+    <h1>Encriptador y Desencriptador</h1>
+
+    <label for="input-text">Texto:</label><br>
+    <textarea id="input-text" rows="4" cols="50"></textarea><br><br>
+
+    <button onclick="encryptText()">Encriptar</button>
+    <button onclick="decryptText()">Desencriptar</button>
+    <button onclick="copyText()">Copiar</button><br><br>
+
+    <label for="output-text">Texto Resultante:</label><br>
+    <textarea id="output-text" rows="4" cols="50" readonly></textarea>
+
+    <script src="script.js"></script>
 </body>
 </html>
