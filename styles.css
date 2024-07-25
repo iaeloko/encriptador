@@ -1,0 +1,105 @@
+/* Reset básico para mantener la consistencia entre navegadores */
+body, h1, label, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Estilo para el título principal */
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Estilo para los labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo para las áreas de texto */
+textarea {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin: 5px; /* Espacio entre botones */
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+button:active {
+    background-color: #1c598a;
+}
+
+/* Alinear los botones correctamente */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea si es necesario */
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column; /* En dispositivos más pequeños, los botones se apilan verticalmente */
+    }
+
+    .buttons button {
+        width: 100%;
+        margin: 5px 0; /* Ajusta el margen para botones apilados */
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
