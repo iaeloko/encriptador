@@ -2,13 +2,17 @@
 body, h1, label, textarea, button {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 80%;
 }
 
 /* Estilo general del cuerpo */
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f5f5f5;
+    color: #2c3e50;
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
@@ -22,11 +26,12 @@ body {
 .container {
     width: 100%;
     max-width: 600px;
-    padding: 20px;
+    padding: 30px;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    margin: 20px 0;
 }
 
 /* Estilo para el título principal */
@@ -34,23 +39,26 @@ h1 {
     margin-bottom: 20px;
     color: #2c3e50;
     text-align: center;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 /* Estilo para los labels */
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: block;
+    color: #34495e;
 }
 
 /* Estilo para las áreas de texto */
 textarea {
-    width: 80%;
+    width: 90%;
     margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 16px;
     resize: vertical;
     font-family: inherit;
     box-sizing: border-box;
@@ -58,48 +66,51 @@ textarea {
 
 /* Estilo para los botones */
 button {
-    background-color: #2980b9;
+    background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 12px 24px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-    margin: 5px; /* Espacio entre botones */
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 5px; /* Espacio entre botones */
 }
 
 button:hover {
-    background-color: #3498db;
+    background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 button:active {
     background-color: #1c598a;
+    transform: translateY(1px);
 }
 
 /* Alinear los botones correctamente */
 .buttons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que los botones se muevan a una nueva línea si es necesario */
+    flex-wrap: wrap;
 }
 
+/* Estilos responsivos */
 @media (max-width: 600px) {
     .buttons {
-        flex-direction: column; /* En dispositivos más pequeños, los botones se apilan verticalmente */
+        flex-direction: column;
     }
 
     .buttons button {
         width: 100%;
-        margin: 5px 0; /* Ajusta el margen para botones apilados */
+        margin: 5px 0;
     }
 
     textarea {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     button {
-        font-size: 16px;
-        padding: 12px 20px;
+        font-size: 18px;
+        padding: 14px 20px;
     }
 }

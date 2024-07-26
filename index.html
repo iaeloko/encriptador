@@ -9,15 +9,24 @@
 <body>
     <h1>Encriptador y Desencriptador</h1>
 
-    <label for="input-text">Texto:</label><br>
-    <textarea id="input-text" rows="4" cols="50"></textarea><br><br>
+    <img src="./media/encriptar-cifrar.png" alt="imagen encriptar">
+    <br>
 
+    <label for="input-text">Ingresa el texto que deseas encriptar</label><br>
+    <textarea id="input-text" rows="4" cols="50"></textarea><br>
+<div>
     <button onclick="encryptText()">Encriptar</button>
     <button onclick="decryptText()">Desencriptar</button>
-    <button onclick="copyText()">Copiar</button><br><br>
+   
 
-    <label for="output-text">Texto Resultante:</label><br>
+
+</div>
+<br>
+ 
+    <label for="output-text">Texto encriptado</label><br>
     <textarea id="output-text" rows="4" cols="50" readonly></textarea>
+
+    <button onclick="copyText()">Copiar</button><br><br>
 
     <script src="script.js"></script>
 </body>
